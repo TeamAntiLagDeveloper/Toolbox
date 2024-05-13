@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toolbox TeamAntiLag</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+<div class="body-wrap">
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header-inner">
+                <div class="brand header-brand">
+                    <h1 class="m-0">
+                        <a href="#">
+                            <img class="logo" src="dist/images/logo.png" alt="Logo">
+                        </a>
+                    </h1>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title mt-0">Team AntiLag TBX</h1>
+                    <p class="hero-paragraph">O Toolbox da Team AntiLag é uma ferramenta utilitária projetada para ajudar usuários de PCs com hardware menos potente. Ele oferece uma variedade de utilitários e recursos para otimizar o desempenho desses sistemas, incluindo melhorias de inicialização, gerenciamento de memória RAM e disponibilização de arquivos úteis para a comunidade. O objetivo é proporcionar uma experiência de computação mais fluida e eficiente para todos, independentemente das especificações de hardware de seus computadores.</p>
+					<div class="hero-cta"><a class="button button-primary" href="https://www.mediafire.com/file/pudct1g8qfsjynb/Toolbox_TeamAntiLag.rar/file">Baixar o Toolbox</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+<section class="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="discord-container">
+                <iframe src="https://discord.com/widget?id=1090105722139852851&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wKjjAmxIkGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="content-container">
+            <div class="container text-center">
+                <div class="site-footer-inner">
+                    <div class="smaller-text">&copy; 2024 TeamAntiLag, Todos os direitos reservados</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="dist/js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer></script>
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1090105722139852851', // Team AntiLag
+        channel: '1090105724497043468' // #???????-????
+    })
+</script>
+<style>
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px; /* Define o máximo de largura para o vídeo */
+    margin: 0 auto; /* Centraliza o vídeo na tela */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px; /* Altura do vídeo */
+}
+
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adiciona a sombra */
+    border-radius: 10px; /* Arredonda as bordas */
+}
+
+    /* Estilos adicionais */
+    .body-wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
+    }
+
+    .body-wrap::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .body-wrap::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .site-header-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(20vh);
+        position: relative;
+    }
+
+    .content-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        animation: blink 1s infinite alternate;
+    }
+
+    @keyframes blink {
+        from {
+            opacity: 0.3;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    .discord-container {
+        max-width: 350px;
+        margin-right: 50px;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+        opacity: 0.7;
+        transition: opacity 0.5s;
+    }
+
+    .discord-container:hover {
+        opacity: 1;
+    }
+
+    .site-footer-inner {
+        text-align: center;
+    }
+
+    .smaller-text {
+        font-size: 0.8em;
+        text-align: center;
+        margin: 0 auto;
+    }
+</style>
+</body>
+</html>
